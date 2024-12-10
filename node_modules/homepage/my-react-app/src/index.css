@@ -1,0 +1,301 @@
+*{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: hsl(49, 51%, 90%);
+    box-sizing: border-box;
+}
+h1{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    
+    font-family: 'Plaifair Display';
+}
+input{
+    font-size: .5rem;
+    text-align: center;
+    padding: .6rem 0px;
+    margin-bottom: 1.5rem;
+    background-color: hsl(49, 25%, 70%);
+    border: 3px solid hsl(154, 26%, 31%);
+    border-radius: 50px;
+}
+input:hover{
+    background-color: hsl(49, 25%, 65%);
+    border: 3px solid hsl(154, 26%, 31%);
+}
+.clear-input-btn{
+    font-size: .5rem;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 50px;
+    margin-left: 5px;
+    background-color: hsl(0, 100%, 45%);
+    cursor: pointer;
+    transition: .5s ease;
+}
+.clear-input-btn:hover{
+    background-color: hsl(0, 100%, 40%);
+}
+/*tags*/
+.tag-filter h3{
+    font-family: 'Plaifair Display';
+}
+.tags{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+    text-align: left;
+}
+.tag{
+    font-size: .8rem;
+}
+.tag input{
+    margin: 5px 1px;
+    padding: 0px;
+}
+/*favs-btn*/
+.favs-btn{
+    background-color: hsl(120, 100%, 97%);
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    transition: .5s ease-in-out;
+    padding: 0px 1px 2px 1px;
+    margin: 5px 0 0 0;
+}
+.favs-btn:hover{
+    font-size: 1.7rem;
+    background-color: hsl(120, 26%, 85%);
+}
+/*form*/
+form{
+    background-color: hsl(49, 51%, 75%);
+    width: fit-content;
+    margin: auto;
+    padding: 1.5rem 3rem;
+    box-shadow: 10px 10px 20px;
+    transition: .5s ease;
+}
+form:hover{
+    background-color: hsl(49, 51%, 65%);
+}
+form h2{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Plaifair Display';
+}
+textarea{
+    font-size: .5rem;
+    text-align: center;
+    width: 12rem;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+    background-color: hsl(49, 25%, 65%);
+    border-radius: 5px;
+}
+form input:focus, textarea:focus{
+    outline: none;
+    border-color: hsl(154, 26%, 31%);
+    box-shadow: 0 0 5px hsla(154, 26%, 26%, .5);
+}
+form button, .recipe-item button{
+    background-color: hsl(154, 34%, 61%);
+    padding: .3rem .5rem;
+    margin: 0 2px;
+    border: 2px solid hsl(154, 26%, 31%);
+    border-radius: 5px;
+}
+form button:hover, .recipe-item button:hover{
+    background-color: hsl(154, 34%, 55%)
+}
+form button{
+    font-size: .8rem;
+}
+.recipe-item button{
+    font-size: .6rem;
+}
+/*sortOptions*/
+.sortOptions-container{
+    padding: 1rem;
+    font-size: .8rem;
+}
+select {
+    padding: 0.5rem;
+    border: 2px solid hsl(154, 26%, 31%);
+    border-radius: 10px;
+    background-color: hsl(49, 25%, 70%);
+    font-size: .8rem;
+    cursor: pointer;
+}
+select:hover {
+    background-color: hsl(49, 25%, 65%);
+    border-color: hsl(154, 26%, 31%);
+}
+/*recipe-list*/
+.recipe-list {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+/*recipe-items*/
+.recipe-item{
+    border: 2px solid hsl(0, 0%, 60%);
+    width: 50vw;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: hsl(49, 51%, 75%);
+    box-shadow: 10px 10px 10px;
+    transition: all 0.3s ease;
+}
+.recipe-item:hover{
+    background-color: hsl(49, 51%, 65%);
+    transform: translateY(-5px);
+}
+.recipe-item h2{
+    font-size: 1rem;
+    padding: 10px 0;
+    border-bottom: 2px solid hsl(0, 0%, 60%);
+    margin-bottom: 5px;
+    font-family: 'Plaifair Display';
+}
+.description{
+    font-size: .5rem;
+}
+.recipe-item h4{
+    font-size: .85rem;
+    font-family: 'Plaifair Display';
+}
+ul{
+    width: fit-content;
+    margin: auto;
+    text-align: left;
+    font-size: .7rem;
+}
+/*pagination*/
+.pagination {
+    text-align: center;
+    margin-top: 1rem;
+}
+.page-btn {
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+.page-btn.active {
+    background-color: hsl(154, 26%, 31%);
+    color: white;
+}
+.page-btn:hover {
+    background-color: hsla(154, 26%, 26%, .5);
+    color: white;
+}
+/**/
+.editing-recipe-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .clear-input-btn{
+        font-size: 1rem;
+    }
+    form{
+        border-radius: 5px;
+    }
+    form h2{
+        font-size: 1.2rem;
+    }
+    input, textarea{
+        font-size: .7rem;
+    }
+    form button{
+        font-size: 1rem;
+    }
+    .sortOptions-container{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .recipe-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .recipe-item {
+        width: 35%;
+        margin: 1rem auto;
+    }
+    .recipe-item h2{
+        font-size: 1.5rem;
+    }
+    .description{
+        font-size: .8rem;
+    }
+    .recipe-item h4{
+        font-size: 1.2rem;
+    }
+    ul{
+        width: fit-content;
+        margin: auto;
+        text-align: left;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .clear-input-btn{
+        font-size: 1.5rem;
+    }
+    form h2{
+        font-size: 2rem;
+    }
+    input, textarea{
+        font-size: 1.5rem;
+    }
+    form button{
+        font-size: 1.7rem;
+    }
+    .sortOptions-container{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .recipe-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .recipe-item {
+        width: 30%;
+        margin: 1rem auto;
+    }
+    .recipe-item h2{
+        font-size: 2rem;
+    }
+    .description{
+        font-size: 1.3rem;
+    }
+    .recipe-item h4{
+        font-size: 1.7rem;
+    }
+    ul{
+        width: fit-content;
+        margin: auto;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+}
