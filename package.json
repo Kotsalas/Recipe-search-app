@@ -1,5 +1,7 @@
 {
   "devDependencies": {
+    "homepage": "https://github.com/Kotsalas/Recipe-search-app",
+    "gh-pages": "^6.2.0",
     "prettier": "^3.4.2"
   }
 }
